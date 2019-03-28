@@ -7,8 +7,20 @@
 import javax.swing.JOptionPane;
 
 public class FactorialCalculator {
-	//TODO: Initialize class variables
-	//TODO: Create get/set functions
-	//TODO: create for loop calculation function
+	int userNum;
+	int result;
 	
+	public int getNumber() {
+		return userNum;
+	}
+	
+	public int getResult() {
+		return result;
+	}
+	
+	public void setNumber(int num) {
+		userNum = num;
+	}
+	//TODO: create for loop calculation function
+
 }

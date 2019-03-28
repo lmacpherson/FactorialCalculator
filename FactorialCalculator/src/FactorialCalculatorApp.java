@@ -9,8 +9,15 @@ import javax.swing.JOptionPane;
 public class FactorialCalculatorApp {
 	
 	public static void main(String[] args) {
-		// TODO Create while loop to run program as long as user requests it
+		FactorialCalculator factorial = new FactorialCalculator(); //object of FactorialCalculator
+		String choice = "y";	//initialize while loop run
+		int num;	//initialize user input
 
+		while (choice.equalsIgnoreCase("y")) {
+			//TODO implement functions to accept input, run calculator, and return value
+			
+		}
+		
 	}
 
 }
