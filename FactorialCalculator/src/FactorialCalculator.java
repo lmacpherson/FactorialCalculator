@@ -10,6 +10,8 @@ public class FactorialCalculator {
 	int userNum;
 	int result;
 	
+	String outputMessage;
+	
 	public int getNumber() {
 		return userNum;
 	}
@@ -18,10 +20,14 @@ public class FactorialCalculator {
 		return result;
 	}
 	
+	public String getString() {
+		return outputMessage;
+	}
+	
 	public void setNumber(int num) {
 		userNum = num;
 	}
-	//TODO: create for loop calculation function
+	
 	public void calculateF() {
 		result = userNum;
 		for (int i=userNum-1; i>0; i--) {
@@ -31,4 +37,19 @@ public class FactorialCalculator {
 			System.out.println("result= " + result);
 		}
 	}
+	
+	//TODO loop to create string for output in joptionpane 
+	public void outputString() {
+		outputMessage = userNum +"! = ";
+		for (int n = userNum; n > 0; n--) {
+			if (n>1) {
+				outputMessage+= n + "*";
+			}
+			else {
+				outputMessage+= n;
+			}
+		}
+		outputMessage += "/nResult = " + result;
+	}
+	
 }

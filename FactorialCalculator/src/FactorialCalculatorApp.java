@@ -21,7 +21,12 @@ public class FactorialCalculatorApp {
 			
 			factorial.setNumber(num);
 			factorial.calculateF();
-			JOptionPane.showMessageDialog(null, "The factorial of " + num + " is " + factorial.getFactorial());
+			
+			//TODO use outputString function to output complete multiplication breakdown
+			//JOptionPane.showMessageDialog(null, "The factorial of " + num + " is " + factorial.getFactorial());
+			factorial.outputString();
+			JOptionPane.showMessageDialog(null, factorial.getString());
+			
 			choice = JOptionPane.showInputDialog("Run the calculator again? (y/n)");
 		}
 		
