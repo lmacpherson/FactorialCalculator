@@ -14,7 +14,7 @@ public class FactorialCalculator {
 		return userNum;
 	}
 	
-	public int getResult() {
+	public int getFactorial() {
 		return result;
 	}
 	
@@ -22,5 +22,10 @@ public class FactorialCalculator {
 		userNum = num;
 	}
 	//TODO: create for loop calculation function
-
+	public void calculateF() {
+		result = userNum;
+		for (int i=userNum; i>0; i--) {
+			result = result*i;
+		}
+	}
 }
