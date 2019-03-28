@@ -15,18 +15,15 @@ public class FactorialCalculatorApp {
 		int num;	//initialize user input
 
 		while (choice.equalsIgnoreCase("y")) {
-			//TODO implement functions to accept input, run calculator, and return value
 			str = JOptionPane.showInputDialog("Enter a number to compute its factorial:");
 			num = Integer.parseInt(str);
 			
 			factorial.setNumber(num);
 			factorial.calculateF();
-			
-			//TODO use outputString function to output complete multiplication breakdown
-			//JOptionPane.showMessageDialog(null, "The factorial of " + num + " is " + factorial.getFactorial());
 			factorial.outputString();
-			JOptionPane.showMessageDialog(null, factorial.getString());
 			
+			JOptionPane.showMessageDialog(null, factorial.getString() + 
+										"\nResult = " + factorial.getFactorial());
 			choice = JOptionPane.showInputDialog("Run the calculator again? (y/n)");
 		}
 		

@@ -28,18 +28,14 @@ public class FactorialCalculator {
 		userNum = num;
 	}
 	
-	public void calculateF() {
+	public void calculateF() {	//calculates factorial, does not return result
 		result = userNum;
 		for (int i=userNum-1; i>0; i--) {
-			System.out.println();
-			System.out.println("i= " + i);
 			result = result*i;
-			System.out.println("result= " + result);
 		}
 	}
 	
-	//TODO loop to create string for output in joptionpane 
-	public void outputString() {
+	public void outputString() { //creates "n! = (n-1)*(n-2)*...." string
 		outputMessage = userNum +"! = ";
 		for (int n = userNum; n > 0; n--) {
 			if (n>1) {
@@ -49,7 +45,6 @@ public class FactorialCalculator {
 				outputMessage+= n;
 			}
 		}
-		outputMessage += "/nResult = " + result;
 	}
 	
 }
