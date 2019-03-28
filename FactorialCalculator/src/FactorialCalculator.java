@@ -24,8 +24,11 @@ public class FactorialCalculator {
 	//TODO: create for loop calculation function
 	public void calculateF() {
 		result = userNum;
-		for (int i=userNum; i>0; i--) {
+		for (int i=userNum-1; i>0; i--) {
+			System.out.println();
+			System.out.println("i= " + i);
 			result = result*i;
+			System.out.println("result= " + result);
 		}
 	}
 }
